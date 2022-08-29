@@ -1,0 +1,43 @@
+<meta charset="utf-8">
+
+<script>
+	document.write("<h1> Utilizando estrutura padrão </h1>");
+	let ano = 2022;
+	let idadeBianca = ano - 1994;
+	let idadeLuiz = ano - 1992;
+	let idadeAnisio = ano - 1967;
+	let idadeMarileia = ano - 1971;
+
+	document.write("Bianca tem " + idadeBianca + " anos" + "<br>");
+	document.write("Luiz tem " + idadeLuiz + " anos" + "<br>");
+	document.write("Mariléia tem " + idadeMarileia + " anos" + "<br>");
+	document.write("Anisio tem " + idadeAnisio + " anos" + "<br>");
+
+	let mediaIdade = (idadeBianca + idadeLuiz + idadeAnisio + idadeMarileia) / 4;
+
+	document.write("A média das idades na família de Bianca é " + Math.round(mediaIdade) + "<br>");
+	document.write("<br>");
+
+	document.write("<h1>Agora utilizando arrays </h1>");
+
+	let nomes = ["Bianca", "Luiz", "Anisio", "Mariléia"];
+	let anoNascimento = [1994, 1992, 1967, 1971];
+	let anoAtual = 2022;
+
+	let idadesArrays = [(anoAtual - anoNascimento[0]), (anoAtual - anoNascimento[1]), (anoAtual - anoNascimento[2]), (anoAtual - anoNascimento[3])];
+
+	document.write("A idade de " + nomes[0] + " é de " + idadesArrays[0] + " anos" + "<br>");
+	document.write("A idade de " + nomes[1] + " é de " + idadesArrays[1] + " anos" + "<br>");
+	document.write("A idade de " + nomes[2] + " é de " + idadesArrays[2] + " anos" + "<br>");
+	document.write("A idade de " + nomes[3] + " é de " + idadesArrays[3] + " anos" + "<br>");
+
+	let mediaIdades = 0;
+
+	for (let i = 0; i < idadesArrays.length; i++){
+		mediaIdades += idadesArrays[i];
+	}
+
+	let media = mediaIdades/idadesArrays.length;
+
+	document.write("A média das idades calculadas por arrays é de " + media);
+</script>

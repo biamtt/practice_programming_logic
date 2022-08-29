@@ -1,0 +1,33 @@
+<meta charset="utf-8">
+
+<h3>Álcool ou Gasolina? - Padrão</h3>
+
+<script>
+	let tanque = 40;
+	let caminhoComGasolina = 480;
+	let caminhaComAlcool = 300;
+
+	let consumoGasolina = caminhoComGasolina / tanque;
+	let consumoAlcool = caminhaComAlcool / tanque;
+
+	document.write("O carro X, utilizando gasolina, faz uma média de " + consumoGasolina + " km por litro<br>");
+	document.write("O carro X, utilizando álcool, faz uma média de " + consumoAlcool + " km por litro<br>");
+</script>
+
+<h3>Álcool ou Gasolina? - Arrays</h3>
+
+<script>
+	let capacidadeTanque = 40;
+	let tipoCombustivel = ["gasolina", "álcool"];
+	let distanciaPercorrida = [480, 300];
+	let mediaDistanciaPorLitro = [(distanciaPercorrida[0] / capacidadeTanque), (distanciaPercorrida[1] / capacidadeTanque)];
+
+	tipoCombustivel.forEach(function (item, indice)) {
+		document.write(item,indice)
+	}
+
+	document.write("O carro X, utilizando " + tipoCombustivel[0] + ", faz uma média de " + mediaDistanciaPorLitro[0] + " km por litro<br>");
+	document.write("O carro X, utilizando " + tipoCombustivel[1] + ", faz uma média de " + mediaDistanciaPorLitro[1] + " km por litro");
+
+
+</script>

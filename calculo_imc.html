@@ -1,0 +1,27 @@
+<meta charset="utf-8">
+
+<script>
+	
+	function novaLinha(){
+		document.write("<br><br>");
+	}
+
+	function mostraConteudo(frase){
+		document.write(frase);
+		novaLinha();
+	}
+
+	let pesos = [44, 83];
+	let alturas = [1.52, 1.78];
+	let nomes = ["Janet", "Luiza"];
+
+	for (let i = 0; i < nomes.length; i++){
+		calculoIMC(alturas[i], pesos[i]);
+	}
+
+	function calculoIMC(altura, peso){
+		let imc = peso / (altura * altura);
+		mostraConteudo("O IMC calculado é de " + Math.round(imc));
+	}
+
+</script>

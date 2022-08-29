@@ -1,0 +1,34 @@
+<meta charset="utf-8">
+
+<body
+	bgcolor="#ff99cc"
+	>
+
+</body>
+
+<script>
+	
+	let nomesIrmaos = ["Luiz", "Bibi"];
+	let idadeIrmaos = [30, 28];
+
+	function novaLinha(){
+		document.write("<br>");
+	}
+
+	function mostraTitulo(titulo){
+		document.write("<h2>" + titulo + "</h2>");
+	}
+
+	function mostraTexto(texto){
+		document.write(texto);
+		novaLinha();
+	}
+
+	alert("Olá, visitante!");
+	mostraTitulo("Diferença de idade - Luiz e Bibi");
+	mostraTexto("O desafio proposto em aula é de calcular a diferença de idade entre irmãos.");
+	mostraTexto("Nesse caso, entre Luiz e eu, Bibi.");
+	mostraTexto("A idade de " + nomesIrmaos[0] + " é de " + idadeIrmaos[0] + ". Já a idade de " + nomesIrmaos[1] + " é de " + idadeIrmaos[1] + ".");
+	mostraTexto("Então, pegando a idade de " + nomesIrmaos[0] + " e, subtraindo pela idade de " + nomesIrmaos[1] + ", chegamos ao resultado de " + (idadeIrmaos[0] - idadeIrmaos[1]) + " anos de diferença.")
+
+</script>
